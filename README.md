@@ -6,8 +6,8 @@ A comprehensive AI system analyzing Indian food recipes through database lookup,
 
 NutriSense AI is an end-to-end AI system for analyzing Indian food nutrition using
 database lookup, image classification, and intelligent recipe modifications.
-
 It addresses the lack of accurate Indian food representation in commercial nutrition APIs.
+
 The system unifies multiple data sources and AI techniques to provide:
 - Database-driven lookups for 725+ curated recipes with complete nutritional profiles
 - Intelligent image classification across 148 Indian dish categories
