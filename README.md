@@ -1,7 +1,6 @@
 # NeutriSense-AI
 
 A comprehensive AI system analyzing Indian food recipes through database lookup, recipe modification, nutritional comparison, and image classification to provide comprehensive dietary insights.Designed to provide accurate nutritional guidance for Indian cuisine with fallback estimation capabilities.
-
 ---
 ## Overview
 
