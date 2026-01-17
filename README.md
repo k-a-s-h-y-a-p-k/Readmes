@@ -30,3 +30,40 @@ The system unifies multiple data sources and AI techniques to provide:
 - Cleaning and fuzzy matching for accurate recipe identification
 - Custom composite scoring for ranking results
 - Returns complete nutritional breakdown for queried dishes
+
+### 2.Recipe Modification (Pathway 2)
+
+- Router passes the extracted dish and constraint from the query
+- The obtained dish is extracted from the database
+- the data from the database and the user constraint is passed to LLM engine
+- The LLM engine generates modified instructions while maintaining nutritional accuracy
+- Preserves dish authenticity while meeting dietary requirements
+
+### 3.Nutritional Comparison (Pathway 3)
+
+- Compare nutritional profiles of two recipes side-by-side
+- Displays macro/micronutrient breakdown for both
+- LLM-generated summary highlighting the healthier option
+- Helps users make informed dietary choices
+
+### 4.Image Classification (Pathway 4)
+
+- Upload food images for automatic dish recognition
+- **EfficientNet-B4** trained on **148 classes Indian food image dataset**
+- Classified dishes automatically routed through Pathway 1
+- Top-3 accuracy: 85.20%
+
+### 5.Router 
+
+- The Router classifies the user query as intent using LLM
+- Handles the execution of all the pathways(1,2 & 3)
+- Extracts the dish mentioned by the user using LLM
+
+### 6. LLM Fallback Estimator
+
+- Intelligent fallback when dishes aren't found in the database
+- Obtains most similar dish from the database (uses Pathway 1)
+- Uses LLM to estimate the range of plausible nutrition for the dish
+- Clearly marked with lower confidence with warnings
+
+  
