@@ -73,4 +73,26 @@ The system unifies multiple data sources and AI techniques to provide:
 This diagram illustrates the high-level architecture of NutriSense AI, including
 query routing, database lookup, image classification, LLM-powered reasoning,
 and fallback estimation pathways.
+
+## Dataset
+
+This dataset contains 725 curated Indian dishes, where each row links a recipe to its detailed nutrient profile. It was created by cleaning and fuzzy-matching two independent sources one with recipes and another with nutritional information using a custom composite score based on multiple string matching metrics and token overlap.
+
+Dataset 1: [Indian Food Nutritional Values Dataset (2025)](https://www.kaggle.com/datasets/batthulavinay/indian-food-nutrition?source=post_page-----22eb05a4c278---------------------------------------)
+
+Dataset 2: [Indian Food Recipes Dataset (Cleaned Version)](https://www.kaggle.com/datasets/sooryaprakash12/cleaned-indian-recipes-dataset?source=post_page-----22eb05a4c278---------------------------------------)
+
+The unified Dataset contains 
+
+- 725 curated indian recipies
+- 15+ nutritional attributes (Calories, Protein, Fat, Carbs, Fiber, Sodium, Iron, Calcium, Vitamin A, Vitamin C, etc.)
+- Ingredients used
+- Cooking Method / Instructions
+- Time to prepare the dish
+- Regional cusisines
+
+** The Unified Dataset : [NutriSense AI Dataset](https://www.kaggle.com/datasets/kashyap077/indian-recipes-ingredients-nutrition-and-cooking) **
+
+
+
   
