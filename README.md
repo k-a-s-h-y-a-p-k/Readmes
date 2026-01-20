@@ -1,4 +1,4 @@
-# NeutriSense-AI
+# NutriSense-AI
 
 A comprehensive AI system analyzing Indian food recipes through database lookup, recipe modification, nutritional comparison, and image classification to provide comprehensive dietary insights.Designed to provide accurate nutritional guidance for Indian cuisine with fallback estimation capabilities.
 
@@ -76,23 +76,74 @@ and fallback estimation pathways.
 
 ## Dataset
 
+### 1. The Unified Food Dataset 
+
 This dataset contains 725 curated Indian dishes, where each row links a recipe to its detailed nutrient profile. It was created by cleaning and fuzzy-matching two independent sources one with recipes and another with nutritional information using a custom composite score based on multiple string matching metrics and token overlap.
 
 Dataset 1: [Indian Food Nutritional Values Dataset (2025)](https://www.kaggle.com/datasets/batthulavinay/indian-food-nutrition?source=post_page-----22eb05a4c278---------------------------------------)
 
 Dataset 2: [Indian Food Recipes Dataset (Cleaned Version)](https://www.kaggle.com/datasets/sooryaprakash12/cleaned-indian-recipes-dataset?source=post_page-----22eb05a4c278---------------------------------------)
 
-The unified Dataset contains 
+The unified dataset contains 
 
-- 725 curated indian recipies
+- 725 curated indian recipes
 - 15+ nutritional attributes (Calories, Protein, Fat, Carbs, Fiber, Sodium, Iron, Calcium, Vitamin A, Vitamin C, etc.)
 - Ingredients used
 - Cooking Method / Instructions
 - Time to prepare the dish
-- Regional cusisines
+- Regional cusines
 
 ***The Unified Dataset :*** [NutriSense AI Dataset](https://www.kaggle.com/datasets/kashyap077/indian-recipes-ingredients-nutrition-and-cooking) 
 
+### 2. The Image Dataset 
 
+This dataset is used to train the image classification model (Efficientnet B4) for Indian food classification.
+**The dataset contains 20136 images with 148 classes**. The dataset was divided into training(16,109) and validation (4027).
 
-  
+***Image Dataset*** : [Indian Food Dataset - cleaned](https://www.kaggle.com/datasets/dipanshukalra/food-dataset-cleaned)
+**This dataset was not uploaded into the repo due to very large size**
+
+## Installation 
+
+### Prerequisites:
+
+- Python 3.9+
+- PyTorch 2.0+
+- TensorFlow/Keras (for data preprocessing)
+- Flask 2.3+
+
+```bash
+# Clone the repository
+git clone https://github.com/KAshyapk07/NutriSense-AI.git
+cd nutrisense-ai
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download the dataset 
+# Place the Image dataset in the Data / Images folder
+
+```
+### Usage
+
+Run the application
+```bash
+python main.py
+```
+
+## Tech Stack
+
+- Python : Core programming language
+- Rapidfuzz : Fuzzy matching
+- Tensorflow/Keras : Image Classification model training
+- LLM integration : Ollama 3.2 with 3B parameters
+- Image Training model: EfficientNet B4
+- Flask : Backend API work
+- Numpy : numerical computations
+- Pandas : Data manipulation and analysis
+
+ 
