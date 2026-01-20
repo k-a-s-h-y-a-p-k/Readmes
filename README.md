@@ -1,8 +1,12 @@
 # NutriSense-AI
 
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-orange)
+![Flask](https://img.shields.io/badge/Flask-2.3+-lightgrey)
+![LLM](https://img.shields.io/badge/LLM-Ollama%203.2-blueviolet)
+![EfficientNet](https://img.shields.io/badge/Model-EfficientNet--B4-green)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-active-success.svg)
+
 
 A comprehensive AI system analyzing Indian food recipes through database lookup, recipe modification, nutritional comparison, and image classification to provide dietary insights. Designed to provide accurate nutritional guidance for Indian cuisine with fallback estimation capabilities.
 
