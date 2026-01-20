@@ -1,6 +1,6 @@
 # NutriSense-AI
 
-A comprehensive AI system analyzing Indian food recipes through database lookup, recipe modification, nutritional comparison, and image classification to provide comprehensive dietary insights.Designed to provide accurate nutritional guidance for Indian cuisine with fallback estimation capabilities.
+A comprehensive AI system analyzing Indian food recipes through database lookup, recipe modification, nutritional comparison, and image classification to provide dietary insights. Designed to provide accurate nutritional guidance for Indian cuisine with fallback estimation capabilities.
 
 ## Overview
 
@@ -80,6 +80,14 @@ and fallback estimation pathways.
 
 This dataset contains 725 curated Indian dishes, where each row links a recipe to its detailed nutrient profile. It was created by cleaning and fuzzy-matching two independent sources one with recipes and another with nutritional information using a custom composite score based on multiple string matching metrics and token overlap.
 
+```bash
+ composite = (
+            WEIGHT_TOKENSET * token_set_score +
+            WEIGHT_WRATIO  * wratio_score +
+            12 * ft_score
+        ) * (0.7 + 0.3 * overlap_factor) - neg_penalty
+```
+
 Dataset 1: [Indian Food Nutritional Values Dataset (2025)](https://www.kaggle.com/datasets/batthulavinay/indian-food-nutrition?source=post_page-----22eb05a4c278---------------------------------------)
 
 Dataset 2: [Indian Food Recipes Dataset (Cleaned Version)](https://www.kaggle.com/datasets/sooryaprakash12/cleaned-indian-recipes-dataset?source=post_page-----22eb05a4c278---------------------------------------)
@@ -91,7 +99,7 @@ The unified dataset contains
 - Ingredients used
 - Cooking Method / Instructions
 - Time to prepare the dish
-- Regional cusines
+- Regional cuisines
 
 ***The Unified Dataset :*** [NutriSense AI Dataset](https://www.kaggle.com/datasets/kashyap077/indian-recipes-ingredients-nutrition-and-cooking) 
 
@@ -127,6 +135,7 @@ pip install -r requirements.txt
 # Download the dataset 
 # Place the Image dataset in the Data / Images folder
 
+# Install Llama model 
 ```
 ### Usage
 
@@ -140,7 +149,7 @@ python main.py
 - Python : Core programming language
 - Rapidfuzz : Fuzzy matching
 - Tensorflow/Keras : Image Classification model training
-- LLM integration : Ollama 3.2 with 3B parameters
+- LLM integration : Llama 3.2 with 3B parameters
 - Image Training model: EfficientNet B4
 - Flask : Backend API work
 - Numpy : Numerical computations
@@ -171,4 +180,13 @@ The dataset was split into 80% training (16,109 images) and 20% validation (4,02
 
 **Kashyap K** : kashyapk1305@gmail.com
 
-Note: This project is for educational and informational purposes
+## License
+
+Code in this repository is licensed under the **MIT License**. See the [`LICENSE`](LICENSE) file for full text.
+
+**Dataset Licenses:**
+- Recipe source (Unified dataset): CC BY NC SA 4.0
+- Nutrition source: Unknown (used for research/educational purposes only)
+
+
+The unified recipe–nutrition dataset must **not** be used as a medical or clinical nutrition reference.
