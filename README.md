@@ -143,7 +143,32 @@ python main.py
 - LLM integration : Ollama 3.2 with 3B parameters
 - Image Training model: EfficientNet B4
 - Flask : Backend API work
-- Numpy : numerical computations
+- Numpy : Numerical computations
 - Pandas : Data manipulation and analysis
 
- 
+## Model Performance
+
+The image classification model was fine-tuned from a pre-trained EfficientNet-B4 architecture on the Indian food image dataset.
+The dataset was split into 80% training (16,109 images) and 20% validation (4,027 images).
+
+#### Validation Performance
+
+- Top-1 accuracy: 67.97%
+- Top-3 accuracy: 85.20%
+- Macro F1: 67.96%
+- Micro F1: 67.97%
+
+## Future Enhancements
+
+- Portion size estimation: ML model to estimate portion from image.
+- Add meal planning and recommendation features.
+- Multi-language support.
+- Expand dataset.
+- User meal logging: Track daily nutrition intake across multiple meals
+- System Evaluation
+
+## Author
+
+**Kashyap K** : kashyapk1305@gmail.com
+
+Note: This project is for educational and informational purposes
