@@ -175,6 +175,16 @@ The dataset was split into 80% training (16,109 images) and 20% validation (4,02
 - Macro F1: 67.96%
 - Micro F1: 67.97%
 
+## Blogs 
+
+I documented the key technical components of this project in detailed blog posts:
+
+- **Building an EfficientNet Image Classification Model With GPU Acceleration**  
+   [Read the blog](https://medium.com/@kashyapkumar1234567890/building-an-efficientnet-image-classification-model-with-gpu-acceleration-999fd95fe926)
+
+- **How I Cleaned and Unified Two Messy Indian Food Datasets Into One High Quality Dataset**    
+   [Read the blog](https://medium.com/@kashyapkumar1234567890/how-i-cleaned-and-unified-two-messy-indian-food-datasets-into-one-high-quality-dataset-for-my-22eb05a4c278)
+
 ## Future Enhancements
 
 - Portion size estimation: ML model to estimate portion from image.
