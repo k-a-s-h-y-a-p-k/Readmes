@@ -13,7 +13,7 @@ I enjoy turning ideas into working ML systems through hands-on experimentation a
 🌱 I’m currently learning Advanced Deep Learning, Transformers, and model fine-tuning  
 
 <img src="https://i.pinimg.com/originals/42/b4/22/42b4229a9ec3145edaa895b2415dd720.gif" alt="Banner" width="100%" />
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+<a href=https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white>
 
 
 
