@@ -127,5 +127,8 @@ Developed at **PESU Venture Labs** as a Deep AI, Web3, and FinTech research proj
 **Domain:** Deep AI, Web3/Crypto, FinTech.
 **Core concepts:** Multi-Agent Reinforcement Learning, game theory (Nash equilibria), concurrent system simulation, Proximal Policy Optimization.
 
+---
+
+**Developed by** Ram Ganesh V · Kashyap K · Nithya Sri P.B · Neema Shrivastava
 
 </div>
