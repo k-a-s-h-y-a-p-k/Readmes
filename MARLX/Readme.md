@@ -129,6 +129,7 @@ Developed at **PESU Venture Labs** as a Deep AI, Web3, and FinTech research proj
 
 ---
 
-**Developed by** Ram Ganesh V · Kashyap K · Nithya Sri P.B · Neema Shrivastava
+**Developed by**
+  Ram Ganesh V · Kashyap K · Nithya Sri P.B · Neema Shrivastava
 
 </div>
